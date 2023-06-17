@@ -31,8 +31,8 @@ task zip(type: Zip) {
 		include "routes/**"
 		include "views/**"
 	}
-	destinationDir(file("dist"))
-	baseName "trainSchedule"
+	destinationDirectory = (file("$buildDir/dist"))
+	archiveFileName =  "trainSchedule.zip"
 }
 
 //declare task dependencies
